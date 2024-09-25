@@ -1,0 +1,11 @@
+# Створення змінних
+greeting = "Hello world"
+name = "Богдана"
+age = 16
+surname = "Степанишина"
+
+# Виведення типу та значення кожної змінної
+print("Змінна greeting: тип:", type(greeting), ", значення:", greeting)
+print("Змінна name: тип:", type(name), ", значення:", name)
+print("Змінна age: тип:", type(age), ", значення:", age)
+print("Змінна surname: тип:", type(surname), ", значення:", surname)
