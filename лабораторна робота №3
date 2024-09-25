@@ -1,0 +1,23 @@
+# Створимо словник з 10 пар ключ-значення
+my_dict = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+    "key4": "value4",
+    "key5": "value5",
+    "key6": "value6",
+    "key7": "value7",
+    "key8": "value8",
+    "key9": "value9",
+    "key10": "value10"
+}
+
+# Замінюємо значення у 2 та 7 парі
+my_dict["key2"] = "new_value2"
+my_dict["key7"] = "new_value7"
+
+# Видаляємо 3 пару
+my_dict.pop("key3")
+
+# Видаляємо значення у 4 парі
+my_dict["key4"] = None
