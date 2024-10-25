@@ -1,0 +1,16 @@
+# Вихідні дані
+name = "Богдана"
+surname = "Степанишина"
+age = 16
+
+# Порівняння типів імені та прізвища
+if type(name) == type(surname):
+    print(f"Тип даних однаковий: {type(name).name}")
+
+# Створення списку з ім'ям і прізвищем через пробіл
+full_name_list = [f"{name} {surname}"]
+print("Список з ім'ям і прізвищем:", full_name_list)
+
+# Перевірка типу даних віку
+if isinstance(age, int):
+    print(f"Тип даних віку: {type(age).name}")
