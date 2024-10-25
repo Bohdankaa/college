@@ -1,0 +1,27 @@
+# Функція для видалення дублікатів
+def remove_duplicates(input_list):
+    return list(set(input_list))
+
+# Функція для сортування: спочатку числа, потім рядки
+def sort_custom(input_list):
+    # Розділяємо числа та рядки
+    numbers = [x for x in input_list if isinstance(x, (int, float))]
+    strings = [x for x in input_list if isinstance(x, str)]
+
+    # Сортуємо числа за зростанням та рядки в алфавітному порядку
+    numbers.sort()
+    strings.sort()
+
+    # Об'єднуємо числа та рядки
+    return numbers + strings
+
+# Основна програма
+initial_list = [1, 2, 3, 4, 5, 6, 3, 4, 5, 7, 6, 5, 4, 3, 4, 5, 4, 3, 'Привіт', 'анаконда']
+
+# Видаляємо дублікати
+unique_list = remove_duplicates(initial_list)
+print("Список без повторень:", unique_list)
+
+# Сортуємо список
+sorted_list = sort_custom(unique_list)
+print("Відсортований список:", sorted_list)
